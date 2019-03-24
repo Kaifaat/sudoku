@@ -52,8 +52,10 @@ it('should solveSudoku 2', () => {
     [1, 6, 5, 3, 9, 0, 4, 7, 0]
   ];
   const copy = initial.map(r => [...r]);
+    console.log(solveSudoku(copy));
   assert.equal(isSolved(initial, solveSudoku(copy)), true);
 });
+
 
 it('should solveSudoku 3', () => {
   const initial = [
